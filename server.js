@@ -16,7 +16,6 @@ app.use((req, res, next) => {
 app.use(cors());
 
 const port = process.env.port || 3000;
-
 const secretKey = 'My super secret key';
 const jwtMW = exjwt({
     secret: secretKey,
