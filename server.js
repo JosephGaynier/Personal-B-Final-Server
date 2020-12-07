@@ -9,7 +9,7 @@ const exjwt = require("express-jwt");
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use((req, res, next) => {
-    res.setHeader('Access-Control-Allow-Origin', 'https://personal-budget-final-ednzw.ondigitalocean.app/personal-b-final-server:8080');
+    res.setHeader('Access-Control-Allow-Origin', 'https://personal-budget-final-ednzw.ondigitalocean.app/personal-b-final-server');
     res.setHeader('Access-Control-Allow-Header', 'Content-type,Authorization');
     next();
 });
@@ -29,7 +29,7 @@ var connection = mysql.createConnection({
     database: 'sql9377168'
 });
 
-app.get('https://personal-budget-final-ednzw.ondigitalocean.app/personal-b-final-server:8080/authorize', jwtMW, async (req, res) => {
+app.get('https://personal-budget-final-ednzw.ondigitalocean.app/personal-b-final-server/authorize', jwtMW, async (req, res) => {
     console.log("ERROR1");
     res.json({ success: true });
 });
