@@ -9,7 +9,7 @@ const exjwt = require("express-jwt");
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use((req, res, next) => {
-    res.setHeader('Access-Control-Allow-Origin', 'http://localhost:3000');
+    res.setHeader('Access-Control-Allow-Origin', 'http://personal-budget-final-ednzw.ondigitalocean.app/personal-b-final-server:8080');
     res.setHeader('Access-Control-Allow-Header', 'Content-type,Authorization');
     next();
 });
