@@ -29,7 +29,7 @@ var connection = mysql.createConnection({
     database: 'sql9377168'
 });
 
-app.get('/authorize', jwtMW, async (req, res) => {
+app.get('https://personal-budget-final-ednzw.ondigitalocean.app/personal-b-final-server:8080/authorize', jwtMW, async (req, res) => {
     console.log("ERROR1");
     res.json({ success: true });
 });
